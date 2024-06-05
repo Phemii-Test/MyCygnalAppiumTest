@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>VGPlatform</groupId>
+    <artifactId>PhenomeApp</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- Selenium Java bindings -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.19.1</version>
+        </dependency>
+
+        <!-- TestNG framework -->
+        <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.8.0</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>9.2.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.16.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.15.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.github.testsigma-eng/appium-flutterfinder-java -->
+<dependency>
+    <groupId>io.github.testsigma-eng</groupId>
+    <artifactId>appium-flutterfinder-java</artifactId>
+    <version>0.1.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.mailslurp/mailslurp-client-java -->
+<dependency>
+    <groupId>com.mailslurp</groupId>
+    <artifactId>mailslurp-client-java</artifactId>
+    <version>15.19.21</version>
+</dependency>
+
+
+    </dependencies>
+</project>
