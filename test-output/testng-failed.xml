@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="functional.AddMedication">
+      <class name="functional.LogProcedure">
         <methods>
-          <include name="addMedication"/>
+          <include name="ValidateProcedureLog"/>
+          <include name="logProcedure"/>
+          <include name="tearDown"/>
           <include name="Setup"/>
-          <include name="ValidateReminderSet"/>
         </methods>
-      </class> <!-- functional.AddMedication -->
+      </class> <!-- functional.LogProcedure -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

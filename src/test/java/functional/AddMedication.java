@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -53,7 +54,7 @@ AppiumDriver driver;
 //		Enter Login details and click enter.
 		WebElement emailField = driver.findElements(By.xpath("//android.widget.ImageView")).get(0);
 		emailField.click();
-		emailField.sendKeys("ohlufehmii@gmail.com");
+		emailField.sendKeys("Ohlufehmii@gmail.com");
 		
 		WebElement passwordField = driver.findElements(By.xpath("//android.widget.ImageView")).get(1);
 		passwordField.click();
@@ -235,6 +236,10 @@ public void ValidateReminderSet() {
 	boolean successCheckMark= driver.findElement(AppiumBy.accessibilityId("Success Icon")).isDisplayed();
 	Assert.assertTrue(successCheckMark);
 	
+}
+@AfterTest
+public void quitApp() {
+	driver.quit();
 }
 	}
 
