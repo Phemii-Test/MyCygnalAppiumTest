@@ -1,33 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-07T18:15:53 PDT" name="Default suite" finished-at="2024-06-07T18:16:49 PDT" duration-ms="55718">
+  <suite started-at="2024-06-08T14:49:46 PDT" name="Default suite" finished-at="2024-06-08T14:50:32 PDT" duration-ms="45846">
     <groups>
     </groups>
-    <test started-at="2024-06-07T18:15:53 PDT" name="Default test" finished-at="2024-06-07T18:16:49 PDT" duration-ms="55718">
-      <class name="functional.LogProcedure">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:15:53 PDT" name="Setup" finished-at="2024-06-07T18:16:01 PDT" duration-ms="7730" status="PASS">
+    <test started-at="2024-06-08T14:49:46 PDT" name="Default test" finished-at="2024-06-08T14:50:32 PDT" duration-ms="45846">
+      <class name="functional.SleepTracker">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:functional.SleepTracker@4681c175]" started-at="2024-06-08T14:49:46 PDT" name="Setup" finished-at="2024-06-08T14:50:01 PDT" duration-ms="14580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Login()[pri:0, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:16:01 PDT" name="Login" finished-at="2024-06-07T18:16:10 PDT" duration-ms="9482" status="PASS">
+        <test-method signature="Login()[pri:0, instance:functional.SleepTracker@4681c175]" started-at="2024-06-08T14:50:01 PDT" name="Login" finished-at="2024-06-08T14:50:10 PDT" duration-ms="8961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="logProcedure()[pri:1, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:16:10 PDT" name="logProcedure" finished-at="2024-06-07T18:16:45 PDT" duration-ms="34583" status="PASS">
+        <test-method signature="ValidateInitialAverageSleepValue()[pri:1, instance:functional.SleepTracker@4681c175]" started-at="2024-06-08T14:50:10 PDT" name="ValidateInitialAverageSleepValue" finished-at="2024-06-08T14:50:18 PDT" duration-ms="8328" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[Cached elements 'By.clazz: android.view.View' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [a947304a-cccb-47fb-98f6-91e7be08414e, getElementText {id=00000000-0000-003b-0000-002f00000003}]
+Capabilities {appium:appActivity: com.mycygnal.mycygnal.MainA..., appium:appPackage: com.mycygnal.mycygnal, appium:automationName: appium, appium:databaseEnabled: false, appium:desired: {appActivity: com.mycygnal.mycygnal.MainA..., appPackage: com.mycygnal.mycygnal, automationName: appium, deviceName: VGP Phone1, platformName: ANDROID, platformVersion: 12, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2776, left: 0, top: 72, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (a947304a-cccb-47fb-98f6-91e7be08414e)] -> class name: android.view.View]
+Session ID: a947304a-cccb-47fb-98f6-91e7be08414e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: Cached elements 'By.clazz: android.view.View' do not exist in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [a947304a-cccb-47fb-98f6-91e7be08414e, getElementText {id=00000000-0000-003b-0000-002f00000003}]
+Capabilities {appium:appActivity: com.mycygnal.mycygnal.MainA..., appium:appPackage: com.mycygnal.mycygnal, appium:automationName: appium, appium:databaseEnabled: false, appium:desired: {appActivity: com.mycygnal.mycygnal.MainA..., appPackage: com.mycygnal.mycygnal, automationName: appium, deviceName: VGP Phone1, platformName: ANDROID, platformVersion: 12, udid: emulator-5554}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3, appium:platformVersion: 12, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2776, left: 0, top: 72, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (a947304a-cccb-47fb-98f6-91e7be08414e)] -> class name: android.view.View]
+Session ID: a947304a-cccb-47fb-98f6-91e7be08414e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+at functional.SleepTracker.ValidateInitialAverageSleepValue(SleepTracker.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logProcedure -->
-        <test-method signature="ValidateProcedureLog()[pri:2, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:16:45 PDT" name="ValidateProcedureLog" finished-at="2024-06-07T18:16:48 PDT" duration-ms="2989" status="PASS">
+        </test-method> <!-- ValidateInitialAverageSleepValue -->
+        <test-method signature="LogSleep()[pri:2, instance:functional.SleepTracker@4681c175]" started-at="2024-06-08T14:50:18 PDT" name="LogSleep" finished-at="2024-06-08T14:50:28 PDT" duration-ms="9549" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateProcedureLog -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:16:48 PDT" name="tearDown" finished-at="2024-06-07T18:16:49 PDT" duration-ms="880" status="PASS">
+        </test-method> <!-- LogSleep -->
+        <test-method signature="VerifySleepLog()[pri:3, instance:functional.SleepTracker@4681c175]" started-at="2024-06-08T14:50:28 PDT" name="VerifySleepLog" finished-at="2024-06-08T14:50:32 PDT" duration-ms="4317" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- functional.LogProcedure -->
+        </test-method> <!-- VerifySleepLog -->
+      </class> <!-- functional.SleepTracker -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
