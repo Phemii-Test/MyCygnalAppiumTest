@@ -1,4 +1,4 @@
 .JRE System Library/
 .Maven Dependencies/
-target/
-test-output/
+.target/
+.test-output/

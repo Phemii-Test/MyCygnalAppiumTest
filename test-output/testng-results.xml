@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-05T12:05:40 PDT" name="Default suite" finished-at="2024-06-05T12:06:46 PDT" duration-ms="65805">
+  <suite started-at="2024-06-07T18:15:53 PDT" name="Default suite" finished-at="2024-06-07T18:16:49 PDT" duration-ms="55718">
     <groups>
     </groups>
-    <test started-at="2024-06-05T12:05:40 PDT" name="Default test" finished-at="2024-06-05T12:06:46 PDT" duration-ms="65805">
-      <class name="functional.AddMedication">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:functional.AddMedication@48bb62]" started-at="2024-06-05T12:05:40 PDT" name="Setup" finished-at="2024-06-05T12:05:51 PDT" duration-ms="10334" status="PASS">
+    <test started-at="2024-06-07T18:15:53 PDT" name="Default test" finished-at="2024-06-07T18:16:49 PDT" duration-ms="55718">
+      <class name="functional.LogProcedure">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:15:53 PDT" name="Setup" finished-at="2024-06-07T18:16:01 PDT" duration-ms="7730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="Login()[pri:0, instance:functional.AddMedication@48bb62]" started-at="2024-06-05T12:05:51 PDT" name="Login" finished-at="2024-06-05T12:05:59 PDT" duration-ms="8395" status="PASS">
+        <test-method signature="Login()[pri:0, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:16:01 PDT" name="Login" finished-at="2024-06-07T18:16:10 PDT" duration-ms="9482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="addMedication()[pri:1, instance:functional.AddMedication@48bb62]" started-at="2024-06-05T12:05:59 PDT" name="addMedication" finished-at="2024-06-05T12:06:17 PDT" duration-ms="18358" status="PASS">
+        <test-method signature="logProcedure()[pri:1, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:16:10 PDT" name="logProcedure" finished-at="2024-06-07T18:16:45 PDT" duration-ms="34583" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addMedication -->
-        <test-method signature="SetMedReminder()[pri:2, instance:functional.AddMedication@48bb62]" started-at="2024-06-05T12:06:17 PDT" name="SetMedReminder" finished-at="2024-06-05T12:06:44 PDT" duration-ms="26577" status="PASS">
+        </test-method> <!-- logProcedure -->
+        <test-method signature="ValidateProcedureLog()[pri:2, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:16:45 PDT" name="ValidateProcedureLog" finished-at="2024-06-07T18:16:48 PDT" duration-ms="2989" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetMedReminder -->
-        <test-method signature="ValidateReminderSet()[pri:3, instance:functional.AddMedication@48bb62]" started-at="2024-06-05T12:06:44 PDT" name="ValidateReminderSet" finished-at="2024-06-05T12:06:46 PDT" duration-ms="2055" status="PASS">
+        </test-method> <!-- ValidateProcedureLog -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:functional.LogProcedure@4681c175]" started-at="2024-06-07T18:16:48 PDT" name="tearDown" finished-at="2024-06-07T18:16:49 PDT" duration-ms="880" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateReminderSet -->
-      </class> <!-- functional.AddMedication -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- functional.LogProcedure -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

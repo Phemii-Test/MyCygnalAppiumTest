@@ -60,7 +60,7 @@ public class Onboarding {
 		cap.setCapability("deviceName", "Fleap Phone");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("platformVersion", "12");
-		cap.setCapability("app", "C:\\Users\\olufemi.habib\\Downloads\\app-release (12).apk");
+		cap.setCapability("app", "C:\\Users\\olufemi.habib\\Downloads\\app-release (13).apk");
 		cap.setCapability("udid", "emulator-5554");
 		cap.setCapability("appPackage", "com.mycygnal.mycygnal");
 		cap.setCapability("appActivity", "com.mycygnal.mycygnal.MainActivity");
